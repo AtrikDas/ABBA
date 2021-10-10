@@ -247,7 +247,7 @@ def test_dev(model, white_model_name,attack_func, bbmodel_names, method, att_typ
              blur_strategy=None, step_size=5, numSP=-1,mask_att_l1=2.0,direction = None,deblurred = None,gpuid=0):
 
     method_name = white_model_name+"_"+white_model_name+"_"+method
-    result_root ="/path of project/" 
+    result_root ="/content/ABBA/" 
 
     if method[0:5] == "mbAdv":
         pert_type = "Blur"
@@ -455,7 +455,7 @@ def test_real(model, white_model_name,attack_func, bbmodel_names, method, att_ty
              blur_strategy=None, step_size=5, numSP=-1,mask_att_l1=2.0,direction = None,deblurred = None,gpuid=0):
 
     method_name = white_model_name+"_"+white_model_name+"_"+method
-    result_root ="put project path here"
+    result_root ="/content/ABBA/"
 
     if method[0:5] == "mbAdv":
         pert_type = "Blur"
@@ -763,7 +763,7 @@ def test_imagenet(model, model_name, attack_func, bbmodel_names, method, att_typ
 , blur_model=None,gpuid =0):
 
     method_name = model_name+"_"+model_name+"_"+method
-    result_root = "/path of project/" #"/home/wangjian/tsingqguo/BlurAttack/"
+    result_root = "/content/ABBA/" #"/home/wangjian/tsingqguo/BlurAttack/"
 
     if method[0:5] == "mbAdv":
         pert_type = "Blur"
@@ -962,7 +962,7 @@ def test_imagenet(model, model_name, attack_func, bbmodel_names, method, att_typ
 def test_cifa10(model, attack_func, method_name, method, att_type, data_dir, kernel_size =0, blur_model=None):
 
     method_name = method_name+"_"+method
-    result_root = "put project path here"
+    result_root = "/content/ABBA"
 
     if method[0:5] == "mbAdv":
         pert_type = "Blur"
